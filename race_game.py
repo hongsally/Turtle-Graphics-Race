@@ -33,9 +33,12 @@ player2.setposition(-265,150)
 move1 = [20,50,60,0,90,-5,-10,-50,100,10]
 move2 = [20,50,60,0,90,-5,-10,-50,100,10]
 
+while(game):
+    pick1 = random.choice(move1)
+    player1.forward(pick1)
+    pick2 = random.choice(move2)
+    player2.forward(pick2)
     
-    
-
 
 
 turtle.mainloop()
